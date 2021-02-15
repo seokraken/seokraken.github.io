@@ -7,13 +7,16 @@ jobs:
     build-and-deploy:
         name: Build and Deploy
         runs-on: [ ubuntu-latest ]
+        
         steps:
            - name: Checkout Repo
            - uses: actions/checkout@v2
              with:
              fetch-depth: 0
+             
            - name: Install Dependencies 
              run: npm install
+             
            - name: Deploy To Firebase
              uses: w9jds/firebase-action@master
              with: 
