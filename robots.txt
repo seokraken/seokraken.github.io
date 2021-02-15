@@ -1,0 +1,3 @@
+# Punten, teu aya nanaon.
+User-agent:*
+Sitemap: https://www.seokraken.eu.org/sitemap.xml
