@@ -1,0 +1,111 @@
+baseURL = "https://www.seokraken.eu.org"
+languageCode = "id-ID"
+DefaultContentLanguage = "id"
+title = "SEO Kraken"
+theme = "less"
+timeout = 200000
+RemovePathAccents = true
+enableRobotsTXT = true
+canonifyURLs = true
+paginate = 5
+googleAnalytics = ""
+disqusShortname = "seo-kraken"
+
+[author]
+  name = "SEO Kraken"
+  
+  [blackfriday]
+hrefTargetBlank = true
+noreferrerLinks = true
+nofollowLinks = true
+        
+[permalinks]
+posts = "/:slug"
+categories = "/:slug"
+            
+[imaging]
+resampleFilter = "lanczos"
+              
+[params]
+#googleAdsense = ""
+copyright = "SEO Kraken"
+                  
+# image size
+sizes = [ "2048" , "1024" , "512" ]
+tags = []
+                        
+ # fonts
+                            sansSerifFont = "Josefin Sans"
+                              titleFont = "Crimson Text"
+                                bodyFont = "Lora"
+                                
+                                  # color
+                                    accentColor = "#00bcd4"
+                                      hasLogo = true
+                                        heroHeader = true
+                                        
+                                        [taxonomies]
+                                          category = "categories"
+                                          
+                                          [params.titles]
+                                            posts = "SEO"
+                                              categories = "Kategori"
+                                              
+[markup]
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = false
+    startLevel = 1
+                                              
+                                              # social
+                                              [params.social]
+                                                email = "hello@seokraken.eu.org"
+                                                  domain = "https://seokraken.eu.org/"
+                                                    # instagram = ""
+                                                      twitter = ""
+                                                        # facebook = ""
+                                                          linkedin = ""
+                                                            # github = ""
+                                                              paypal = ""
+                                                                telegram = ""
+                                                                
+# menu contents
+                                                                [[menu.main]]
+                                                                  name = "SEO"
+                                                                    title = "Analyze Your SEO Level"
+                                                                      weight = 1
+                                                                        identifier = "seo"
+                                                                          url = "/seo"
+                                                                          [[menu.main]]
+                                                                            name = "Training"
+                                                                              title = "Digital Marketing Training"
+                                                                                weight = 2
+                                                                                  identifier = "training"
+                                                                                    url = "/training"
+                                                                                    [[menu.main]]
+                                                                                      name = "Tools"
+                                                                                        title = "SEO Tools for Beginner"
+                                                                                          weight = 3
+                                                                                            identifier = "tools"
+                                                                                              url = "/tools"
+                                                                                              [[menu.main]]
+                                                                                                name = "About"
+                                                                                                  title = "About SEO Kraken Organization"
+                                                                                                    weight = 4
+                                                                                                      identifier = "about"
+                                                                                                        url = "/about"
+                                                                                                        
+                                                                                                        # footer contents
+                                                                                                        [params.license]
+                                                                                                          type = "CC BY-NC 4.0"
+                                                                                                            url = "/cc-by-nc"
+                                                                                                            
+                                                                                                            [params.policy]
+                                                                                                              type = "Privacy Policy"
+                                                                                                                url = "/policy"
+                                                                                                                
+                                                                                                                [[related.indices]]
+                                                                                                                  name = "categories"
+                                                                                                                    weight =  1
+                                                                                                                      includeNewer = true
+                                                                                                                      

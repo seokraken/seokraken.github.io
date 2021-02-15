@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+    
+    <link rel="stylesheet" href="https://www.seokraken.eu.org/main.min.2b84cd9e504888367f0c0b0f97465c6cb1d39791a2ca4d585d7895f585972a17.css">
+  
+  <meta name="msapplication-TileImage" content="/icons/icon-144x144.png">
+  <link rel="icon" href="https://www.seokraken.eu.org/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://www.seokraken.eu.org/icons/icon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.seokraken.eu.org/icons/icon-32x32.png">
+  <link rel="icon" sizes="192x192" href="https://www.seokraken.eu.org/icons/icon-192x192.png">
+  <link rel="apple-touch-icon" href="https://www.seokraken.eu.org/icons/icon-152x152.png">
+  <link rel="shortcut icon" href="https://www.seokraken.eu.org/favicon.ico">
+  <meta property="og:title" content="Berbagi Koneksi Wi-Fi Melalui Ethernet Di GNU/Linux - SEO Kraken " />
+<meta property="og:description" content="Konfigurasi NetworkManager untuk berbagi koneksi internet di GNU/Linux." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/" />
+<meta property="og:image" content="https://www.seokraken.eu.orgprofil/banner.png">
+<meta property="og:image" content="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/cover.jpg"/>
+<meta property="og:site_name" content="SEO Kraken" />
+
+  
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/cover.jpg"/>
+<meta name="twitter:title" content="Berbagi Koneksi Wi-Fi Melalui Ethernet Di GNU/Linux"/>
+<meta name="twitter:description" content="Konfigurasi NetworkManager untuk berbagi koneksi internet di GNU/Linux."/>
+
+  <title> Berbagi Koneksi Wi-Fi Melalui Ethernet Di GNU/Linux | SEO Kraken</title>
+<meta name="description" content="Konfigurasi NetworkManager untuk berbagi koneksi internet di GNU/Linux.">
+<meta name="keywords" content="">
+<link rel="canonical" href="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/">
+<link rel="alternate" hreflang="id" href="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/">
+<link rel="alternate" hreflang="en" href="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/">
+<script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/www.seokraken.eu.org"
+    },
+    "articleSection" : "posts",
+    "name" : "Berbagi Koneksi Wi-Fi Melalui Ethernet Di GNU\/Linux",
+    "headline" : "Berbagi Koneksi Wi-Fi Melalui Ethernet Di GNU\/Linux",
+    "description" : "Konfigurasi NetworkManager untuk berbagi koneksi internet di GNU\/Linux.",
+    "inLanguage" : "id-ID",
+    "image" : "https:\/\/www.seokraken.eu.org\/Page%28\/posts\/berbagi-koneksi-wifi-via-ethernet-di-gnulinux\/index.md%29",
+    "author" : "SEO Kraken",
+    "creator" : "SEO Kraken",
+    "publisher": {
+
+      "@type": "Organization",
+      "name": "SEO Kraken",
+      "logo" : {
+        "@type": "ImageObject",
+        "url": "https:\/\/www.seokraken.eu.org\/Page%28\/posts\/berbagi-koneksi-wifi-via-ethernet-di-gnulinux\/index.md%29"
+      } 
+    },
+    "accountablePerson" : "SEO Kraken",
+    "copyrightHolder" : "SEO Kraken",
+    "copyrightYear" : "2020",
+    "datePublished": "February 16, 2020",
+    "dateModified" : "March 7, 2020",
+    "url" : "https:\/\/www.seokraken.eu.org\/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux\/",
+    "sameAs": [
+        "https://facebook.com/",
+        "https://twitter.com/",
+        "https://instagram.com/",
+        "https://linkedin.com/in/"
+      ],
+    "wordCount" : "358",
+    "keywords" : [ "Blog" ]
+}
+</script>
+
+</head>
+
+  <body>
+    <div class="wrapper">
+      
+    <header class="main_header">
+      <div class="wrapped">
+      <span class="title">
+        <a href="https://www.seokraken.eu.org/">
+          
+            <img src="https://www.seokraken.eu.org/logo.svg" alt="SEO Kraken"/>
+          
+        </a>
+      </span>
+
+      <input id="burger" type="checkbox" />
+
+      <label class="burger_label" for="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      
+<nav class="main_menu">
+  <ul>
+    
+    <li>
+      <a class="nav-item" href="https://www.seokraken.eu.org/seo" title="Analyze Your SEO Level">SEO</a>
+      </li>
+    
+    <li>
+      <a class="nav-item" href="https://www.seokraken.eu.org/training" title="Digital Marketing Training">Training</a>
+      </li>
+    
+    <li>
+      <a class="nav-item" href="https://www.seokraken.eu.org/tools" title="SEO Tools for Beginner">Tools</a>
+      </li>
+    
+    <li>
+      <a class="nav-item" href="https://www.seokraken.eu.org/about" title="About SEO Kraken Organization">About</a>
+      </li>
+    
+  </ul>
+</nav>
+
+      <div class="social">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+      </div>
+    </header>
+
+
+      
+
+<div class="post-img" style="background: url('https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/cover.jpg') no-repeat 50% / cover"></div>
+<div class="post-title">
+  <span class="category">
+    
+    <a class="no-decoration" href="https://www.seokraken.eu.org/linux">linux</a>
+     ↠
+    16 februari 2020
+  </span>
+  <h1 class="medium"> Berbagi Koneksi Wi-Fi Melalui Ethernet Di GNU/Linux</h1>
+  <h3>Mudah berbagi koneksi internet di GNU/Linux.</h3>
+</div>
+<div class="main post">
+  
+  
+
+  <p>Sampurasun. Beberapa waktu lalu saya memiliki masalah untuk mengkoneksikan internet ke perangkat Raspberry Pi, dikarenakan versi Raspberry Pi yang saya miliki terbilang cukup jadul (Raspberry Pi 1B) yang mana tidak memiliki <em>built-in</em> wifi. Tentu saya dapat mengkoneksikan internet melalui USB-Tethring, namun nantinya akan timbul masalah ketika saya ingin mengakses perangkat tersebut secara remote menggunakan laptop.</p>
+<p>Lalu saya menemukan alternatif lain, yaitu dengan cara membagikan koneksi internet dari laptop yang terinstal GNU/Linux melalui ethernet yang mana caranya akan saya jelaskan pada tulisan ini.</p>
+<p>Ada <strong>dua</strong> cara untuk melakukan hal tersebut, yaitu melalui <strong>GUI</strong> dan <strong>Console</strong>.</p>
+<hr>
+<h2 id="1-gui">1. GUI</h2>
+<p>Cara ini dapat Anda lakukan jika GNU/Linux yang terinstal memiliki lingkungan desktop.</p>
+<p>Pertama buka terminal dan jalankan perintah berikut :</p>
+<pre><code>$ nm-connection-editor
+</code></pre><p>Maka akan muncul jendela baru seperti berikut ini :
+<figure >
+  
+  
+  
+    
+    <img class="lazyload" src="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/nm1_hu674ed34361d1b5edf642ad5e189060c5_10828_0x100_resize_lanczos_2.png" data-src="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/nm1.png" alt="NetworkManager" data-action="zoom">
+  
+</figure>
+</p>
+<p>Pada jendela tersebut klik tanda &ldquo;<strong>+</strong>&rdquo; lalu pilih <strong>Ethernet</strong> dan klik <strong>Create</strong>.
+<figure >
+  
+  
+  
+    
+    <img class="lazyload" src="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/nm2_hu6054001616702da750df75277f582b74_51629_0x100_resize_lanczos_2.png" data-src="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/nm2.png" alt="Membuat Interface Baru" data-action="zoom">
+  
+</figure>
+</p>
+<p>Maka akan muncul jendela baru lagi untuk melakukan konfigurasi. Setelah itu klik pada tab <strong>IPv4 Settings</strong>.</p>
+<p>Pada bagian <strong>Connection Name</strong> beri nama sesuai keinginan Anda, dan pada bagian <strong>Method</strong> pilih <em><strong>Shared to other computers</strong></em>.
+<figure >
+  
+  
+  
+    
+    <img class="lazyload" src="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/nm3_hu5fd47545938f5b98734aae2578c9773a_46620_0x100_resize_lanczos_2.png" data-src="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/nm3.png" alt="Konfigurasi Interface Baru" data-action="zoom">
+  
+</figure>
+</p>
+<p>Simpan hasil konfigurasi tersebut dengan meng-klik tombol <strong>save</strong>. Setelah itu sambungkan kedua perangkat dengan kabel LAN. Maka perangkat yang Anda sambungkan dengan laptop akan otomatis terkoneksi dengan internet.</p>
+<h2 id="2-console">2. Console</h2>
+<p>Seperti yang saya sebutkan di atas, selain melalui GUI, Anda juga dapat melakukan nya pada Console. Hal ini dilakukan jika GNU/Linux yang terinstal tidak memiliki lingkungan desktop.</p>
+<p>Pada console, jalankan perintah berikut :</p>
+<pre><code>$ nmtui
+</code></pre><p>Maka akan muncul tampilan nmtui seperti berikut ini:
+<figure >
+  
+  
+  
+    
+    <img class="lazyload" src="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/nmtui1_hu341c17fba56aa5bbb36a16922fee2acc_18753_0x100_resize_lanczos_2.png" data-src="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/nmtui1.png" alt="NMTUI" data-action="zoom">
+  
+</figure>
+</p>
+<p>Pilih <strong>Edit a connection</strong> maka akan muncul menu baru seperti berikut ini :
+<figure >
+  
+  
+  
+    
+    <img class="lazyload" src="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/nmtui2-1_huce06ee8a033be5f5b41c392f2ec5ea9e_14696_0x100_resize_lanczos_2.png" data-src="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/nmtui2-1.png" alt="Membuat Koneksi Baru NMTUI" data-action="zoom">
+  
+</figure>
+</p>
+<p>Setelah itu pilih <strong>&lt; Add &gt;</strong> kemudian pilih <strong>Ethernet</strong>.
+<figure >
+  
+  
+  
+    
+    <img class="lazyload" src="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/nmtui2-2_hu5976af1420067c8d57cc85fa41327fc4_27834_0x100_resize_lanczos_2.png" data-src="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/nmtui2-2.png" alt="Menambahkan Interface Baru NMTUI" data-action="zoom">
+  
+</figure>
+</p>
+<p>Pada bagian <strong>Profile name</strong> beri nama sesuai keinginan Anda, dan pada bagian <strong>IPv4 CONFIGURATIONS</strong> pilih <em><strong>Shared</strong></em>. Biarkan bagian lain nya tetap default.
+<figure >
+  
+  
+  
+    
+    <img class="lazyload" src="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/nmtui3_hu984d07630768836ec0c5d0658a10bdbc_33439_0x100_resize_lanczos_2.png" data-src="https://www.seokraken.eu.org/berbagi-koneksi-wi-fi-melalui-ethernet-di-gnulinux/nmtui3.png" alt="Konfigurasi Interface Baru NMTUI" data-action="zoom">
+  
+</figure>
+</p>
+<p>Simpan hasil konfigurasi tersebut dengan memilih opsi <strong>&lt; OK &gt;</strong>. Keluar dari nmtui dengan menekan tombol <strong>ESC</strong> pada keyboard beberapa kali.
+Setelah itu sambungkan kedua perangkat dengan kabel LAN. Maka perangkat yang Anda sambungkan dengan laptop akan otomatis terkoneksi dengan internet.</p>
+<hr>
+<p>Itulah cara berbagi koneksi wifi melalui ethernet di GNU/Linux. Jika dirasa ada yang kurang atau
+Anda memiliki masukan, silahkan berikan komentar melalui kolom di bawah.</p>
+<p>Hatur nuhun.</p>
+
+  
+  <div class="love-post center" data-love-id="halimboi_933432426a57a33e35d3da3691093973">
+  <button class="love-post-btn cemter" title="Suka postingan ini?" type="button">
+    <span class="love-post-icon">
+        <svg
+        aria-hidden="true"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path></svg>
+    </span>
+  </button>
+  <div class="love-post-count">Memuat...</div>
+</div>
+
+  <div id="comments" class="thin"><div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+  if (window.location.hostname == "localhost")
+      return;
+
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  var disqus_shortname = 'halimboi';
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript> <a href="http://disqus.com/?ref_noscript"> Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink"> <span class="logo-disqus">Disqus</span></a>
+
+</div>
+</div>
+<div class="related-wrapper">
+  <div class="related">
+  
+  <div class="tile">
+    
+    
+      
+      
+      <a class="no-decoration" href="https://www.seokraken.eu.org/mencegah-koneksi-ssh-terputus/">
+        <img class="lazyload" src="https://www.seokraken.eu.org/mencegah-koneksi-ssh-terputus/cover_hu3d03a01dcc18bc5be0e67db3d8d209a6_469949_40x50_fill_q75_lanczos_center.jpg" data-src="https://www.seokraken.eu.org/mencegah-koneksi-ssh-terputus/cover_hu3d03a01dcc18bc5be0e67db3d8d209a6_469949_400x500_fill_q75_lanczos_center.jpg" alt="Mencegah Koneksi SSH Terputus (Time Out) Di GNU/Linux" />
+      </a>
+    
+    <h3 class="t12">
+      <a class="title bold no-decoration" href="https://www.seokraken.eu.org/mencegah-koneksi-ssh-terputus/">
+         Mencegah Koneksi SSH Terputus (Time Out) Di GNU/Linux
+      </a>
+    </h3>
+    <h4>Mengatasi koneksi SSH sering terputus dengan pesan KeepAlive.</h4>
+  </div>
+  
+  <div class="tile">
+    
+    
+      
+      
+      <a class="no-decoration" href="https://www.seokraken.eu.org/mengakses-ssh-tanpa-password-menggunakan-ssh-keys/">
+        <img class="lazyload" src="https://www.seokraken.eu.org/mengakses-ssh-tanpa-password-menggunakan-ssh-keys/cover_hu3d03a01dcc18bc5be0e67db3d8d209a6_689334_40x50_fill_q75_lanczos_center.jpg" data-src="https://www.seokraken.eu.org/mengakses-ssh-tanpa-password-menggunakan-ssh-keys/cover_hu3d03a01dcc18bc5be0e67db3d8d209a6_689334_400x500_fill_q75_lanczos_center.jpg" alt="Mengakses SSH Tanpa Password Menggunakan SSH Keys" />
+      </a>
+    
+    <h3 class="t12">
+      <a class="title bold no-decoration" href="https://www.seokraken.eu.org/mengakses-ssh-tanpa-password-menggunakan-ssh-keys/">
+         Mengakses SSH Tanpa Password Menggunakan SSH Keys
+      </a>
+    </h3>
+    <h4>Login SSH lebih aman menggunakan public-key SSH di GNU/Linux.</h4>
+  </div>
+  
+  <div class="tile">
+    
+    
+      
+      
+      <a class="no-decoration" href="https://www.seokraken.eu.org/hal-yang-perlu-dilakukan-setelah-menginstal-fedora/">
+        <img class="lazyload" src="https://www.seokraken.eu.org/hal-yang-perlu-dilakukan-setelah-menginstal-fedora/cover_hu8c9c61b44c492a78f4434ef6067b8a3f_244827_40x50_fill_q75_lanczos_center.jpg" data-src="https://www.seokraken.eu.org/hal-yang-perlu-dilakukan-setelah-menginstal-fedora/cover_hu8c9c61b44c492a78f4434ef6067b8a3f_244827_400x500_fill_q75_lanczos_center.jpg" alt="Hal Yang Perlu Dilakukan Setelah Menginstal Fedora" />
+      </a>
+    
+    <h3 class="t12">
+      <a class="title bold no-decoration" href="https://www.seokraken.eu.org/hal-yang-perlu-dilakukan-setelah-menginstal-fedora/">
+         Hal Yang Perlu Dilakukan Setelah Menginstal Fedora
+      </a>
+    </h3>
+    <h4>Selesai menginstal Fedora? Selanjutnya apa?</h4>
+  </div>
+  
+  <div class="tile">
+    
+    
+      
+      
+      <a class="no-decoration" href="https://www.seokraken.eu.org/panduan-instalasi-archlinux-secara-offline-di-uefi/">
+        <img class="lazyload" src="https://www.seokraken.eu.org/panduan-instalasi-archlinux-secara-offline-di-uefi/cover_hu5438825b9b6d1014226d20d231e650c2_71987_40x50_fill_q75_lanczos_center.jpg" data-src="https://www.seokraken.eu.org/panduan-instalasi-archlinux-secara-offline-di-uefi/cover_hu5438825b9b6d1014226d20d231e650c2_71987_400x500_fill_q75_lanczos_center.jpg" alt="Panduan Instalasi Archlinux Secara Offline Di UEFI" />
+      </a>
+    
+    <h3 class="t12">
+      <a class="title bold no-decoration" href="https://www.seokraken.eu.org/panduan-instalasi-archlinux-secara-offline-di-uefi/">
+         Panduan Instalasi Archlinux Secara Offline Di UEFI
+      </a>
+    </h3>
+    <h4>Instalasi Arch Linux Secara Offline Di UEFI</h4>
+  </div>
+  
+</div>
+</div>
+
+
+    </div>
+    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 55,
+  backgroundColor: '#17181E',
+  textColor: '#fff'
+})</script>
+
+    <footer class="t09">
+    © 2021 <a href="https://www.seokraken.eu.org">SEO Kraken</a> | <a href="https://www.seokraken.eu.org/cc-by-nc">CC BY-NC 4.0</a> | <a href="https://www.seokraken.eu.org/policy">Privacy Policy</a>
+</footer>
+
+    
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+      
+      <script src="https://www.seokraken.eu.org/js/main.min.2744a347892293416dbae63dd7eab6335c6e703f1111d2f2cd0c66b09ae2ce2e.js" integrity="sha256-J0SjR4kik0FtuuY91&#43;q2M1xucD8REdLyzQxmsJrizi4="></script>
+    
+  </body>
+</html>
