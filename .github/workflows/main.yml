@@ -4,15 +4,12 @@ on:
     branches: [ master ]
 
 jobs:
-    build-and-deploy:
+  build-and-deploy:
         name: Build and Deploy
         runs-on: [ ubuntu-latest ]
-        
         steps:
            - name: Checkout Repo
            - uses: actions/checkout@v2
-             with:
-             fetch-depth: 0
              
            - name: Install Dependencies 
              run: npm install
@@ -20,6 +17,6 @@ jobs:
            - name: Deploy To Firebase
              uses: w9jds/firebase-action@master
              with: 
-             args: deploy --only hosting
+               args: deploy --only hosting
              env: 
-             FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+               FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
