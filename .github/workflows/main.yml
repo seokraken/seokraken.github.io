@@ -10,10 +10,17 @@ jobs:
         steps:
            - name: Checkout Repo
            - uses: actions/checkout@v2
-             
-           - name: Install Dependencies 
+           - run: |
+               date > generated.txt
+               git config user.name github-actions
+               git config user.email github-actions@github.com
+               git add .
+               git commit -m "generated"
+               git push
+
+           - name: Install Dependencies
              run: npm install
-             
+
            - name: Deploy To Firebase
              uses: w9jds/firebase-action@master
              with: 
